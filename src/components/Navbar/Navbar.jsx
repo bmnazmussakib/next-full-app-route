@@ -42,7 +42,7 @@ export default function Navbar() {
 
     return (
         <div className={styles.container}>
-            <Link href="/" className={styles.logo}>Sakib</Link>
+            <Link href="/" className={styles.logo}></Link>
             <div className={styles.links}>
                 <DarkMoodToggle />
             {
@@ -50,6 +50,7 @@ export default function Navbar() {
                     <Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link>
                 ))
             }
+            
             <button onClick={()=>{
                 console.log("Logout")
             }} className={styles.logout}>
